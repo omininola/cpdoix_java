@@ -149,13 +149,13 @@ spring.jpa.hibernate.ddl-auto=update
 
 URL Base -> **localhost:8080**
 
-| Método | Rota                                 | Descrição                                               |
-|--------|--------------------------------------|---------------------------------------------------------|
-| POST   | [/toys](localhost:8080/toys)         | Cria uma nova instância de brinquedo                    |
-| GET    | [/toys](localhost:8080/toys)         | Retorna todos os brinquedos guardados no banco de dados |
-| GET    | [/toys/{id}](localhost:8080/toys/10) | Retorna o brinquedo com o id fornecido                  |
-| PUT    | [/toys/{id}](localhost:8080/toys/10) | Atualiza o brinquedo com o id fornecido                 |
-| DELETE | [/toys/{id}](localhost:8080/toys/10) | Delete o brinquedo com o id fornecido                   |
+| Método | Rota                                             | Descrição                                               |
+|--------|--------------------------------------------------|---------------------------------------------------------|
+| POST   | [/brinquedos](localhost:8080/brinquedos)         | Cria uma nova instância de brinquedo                    |
+| GET    | [/brinquedos](localhost:8080/brinquedos)         | Retorna todos os brinquedos guardados no banco de dados |
+| GET    | [/brinquedos/{id}](localhost:8080/brinquedos/10) | Retorna o brinquedo com o id fornecido                  |
+| PUT    | [/brinquedos/{id}](localhost:8080/brinquedos/10) | Atualiza o brinquedo com o id fornecido                 |
+| DELETE | [/brinquedos/{id}](localhost:8080/brinquedos/10) | Delete o brinquedo com o id fornecido                   |
 
 ### JSON de um brinquedo
 
