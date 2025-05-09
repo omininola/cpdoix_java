@@ -47,7 +47,7 @@ spring.jpa.hibernate.ddl-auto=update
 ```xml
 <dependencies>
 
-    <!--  Spring	-->
+    <!-- Spring -->
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -147,15 +147,15 @@ spring.jpa.hibernate.ddl-auto=update
 
 ## Rotas HTTP
 
-### URL Base -> *localhost:8080*
+URL Base -> **localhost:8080**
 
-| Método | Rota  | Descrição |
-|--------|-------|-----------|
-| POST   | /toys | Cria uma nova instância de brinquedo |
-| GET    | /toys | Retorna todos os brinquedos guardados no banco de dados |
-| GET    | /toys/{id} | Retorna o brinquedo com o id fornecido |
-| PUT    | /toys/{id} | Atualiza o brinquedo com o id fornecido |
-| DELETE | /toys/{id} | Delete o brinquedo com o id fornecido |
+| Método | Rota                                 | Descrição                                               |
+|--------|--------------------------------------|---------------------------------------------------------|
+| POST   | [/toys](localhost:8080/toys)         | Cria uma nova instância de brinquedo                    |
+| GET    | [/toys](localhost:8080/toys)         | Retorna todos os brinquedos guardados no banco de dados |
+| GET    | [/toys/{id}](localhost:8080/toys/10) | Retorna o brinquedo com o id fornecido                  |
+| PUT    | [/toys/{id}](localhost:8080/toys/10) | Atualiza o brinquedo com o id fornecido                 |
+| DELETE | [/toys/{id}](localhost:8080/toys/10) | Delete o brinquedo com o id fornecido                   |
 
 ### JSON de um brinquedo
 
