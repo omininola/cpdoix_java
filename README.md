@@ -159,7 +159,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 ### JSON de um brinquedo
 
-```json
+```javascript
 {
     "name": string,
     "type": string,
@@ -169,7 +169,7 @@ spring.jpa.hibernate.ddl-auto=update
 }
 ```
 
-#### Exemplo
+### Exemplo
 
 ```json
 {
