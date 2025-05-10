@@ -137,6 +137,15 @@ spring.jpa.hibernate.ddl-auto=update
 - `ToyClassification`: Classificações pré-definidas que a classe `Toy` pode ter
 - `ToySize`: Tamanhos pré-definidos que a classe `Toy` pode ter
 
+### DTOs
+
+- `ToyReq`: Faz a validação das requisições que vêm da web, para que ela seja mapeada para uma instância de `Toy`
+- `ToyRes`: É a resposta que um usuário recebe com as informações necessárias do `Toy`
+
+### Services
+
+- `ToyService`: Faz o mapeamento de `ToyReq` para `Toy` e o mapeamento de `Toy` para `ToyRes`
+
 ### Repositories
 
 - `ToyRepository`: Responsável por fazer a ligação entre um repositório comum e a classe `Toy`
@@ -144,6 +153,10 @@ spring.jpa.hibernate.ddl-auto=update
 ### Controllers
 
 - `ToyController`: Aqui é onde toda a mágica acontece, rotas com métodos HTTP e acesso ao `ToyRepository` para fazer a comunicação propriamente dita com o banco de dados da Oracle
+
+### Exceptions
+
+- `ValidationExceptionHandler`: Caso algum erro ocorra na hora de mapear um `ToyReq` para um `Toy`, esse cara entra em ação e devolve uma resposta com o erro para o usuário
 
 ## Rotas HTTP
 
